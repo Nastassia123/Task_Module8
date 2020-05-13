@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator operations suite"  parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="listeners.TestListeners"></listener>
+	</listeners>
+
+	<test name="RegressionTests">
+		<classes>
+			<class name="tests.javaScriptExecutorTests"/>
+			<class name="tests.VerifyMouseAction"/>
+		</classes>
+	</test>
+</suite>
